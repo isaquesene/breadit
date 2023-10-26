@@ -2,6 +2,7 @@ import { FC } from 'react'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
 import { buttonVariants } from '@/components/ui/Button'
+import SignIn from '@/components/SignIn'
 
 
 const page: FC = () => {
@@ -12,6 +13,8 @@ const page: FC = () => {
             className={cn(buttonVariants({variant: 'ghost'}), 'self-start -mt-20')}>
                 Home
             </Link>
+
+            <SignIn/>
         </div>
     </div>
 }
